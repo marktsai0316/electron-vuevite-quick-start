@@ -46,7 +46,7 @@ function createWindow() {
     if (process.env.VITE_DEV_SERVER_URL) {
         mainWindow.loadURL(process.env.VITE_DEV_SERVER_URL)
         mainWindow.webContents.openDevTools()
-        mainWindow.maximize()
+        //mainWindow.maximize()
     } else {
         mainWindow.loadFile(join(process.env.BUILD_APP, 'index.html'))
     }
